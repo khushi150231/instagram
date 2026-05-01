@@ -212,3 +212,70 @@ html, body {
     justify-content: start;
     gap: 10px;
 }
+
+/* --- Mobile Responsiveness --- */
+@media screen and (max-width: 1024px) {
+    .right-container {
+        width: 100%;
+    }
+    .sidebar {
+        display: none;
+    }
+    .posts {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left input {
+        width: 180px;
+    }
+    .right button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .posts {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .post-image-container {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .left input {
+        width: 120px;
+        padding: 8px 15px;
+    }
+    .right {
+        gap: 10px;
+    }
+    .right button {
+        display: none; /* Hide button on very small screens to save space */
+    }
+    .posts {
+        width: 100%;
+        margin-left: 0;
+    }
+    .post-image-container {
+        border-radius: 0;
+        height: 35vh;
+    }
+    .feed-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .bottomnav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .circle {
+        height: 40px;
+        width: 40px;
+    }
+    .engagement-section {
+        font-size: 24px;
+    }
+}
